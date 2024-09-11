@@ -117,13 +117,13 @@ export function Members() {
             </div>
           ) : null}
         </AnimatePresence>
-        <ul className="mx-auto w-full flex flex-wrap items-start gap-5">
+        <ul className="mx-auto my-10 w-full flex flex-wrap items-start gap-5">
           {members.map((card, index) => (
             <motion.div
               layoutId={`card-${card.title}-${id}`}
               key={card.title}
               onClick={() => setActive(card)}
-              className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+              className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-white-100/20 rounded-xl cursor-pointer"
             >
               <div className="flex gap-4 flex-col  w-full">
                 <motion.div layoutId={`image-${card.title}-${id}`}>
