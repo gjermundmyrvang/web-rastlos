@@ -35,3 +35,61 @@ export const happeningItems = [
     }, 
   ]
 
+  export const members = [
+    {
+      description: "Gjerry The Tenth",
+      title: "CTO",
+      src: "/members/gjerry.JPG",
+      ctaText: "Visit",
+      ctaLink: "#",
+      content: () => {
+        return (
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus excepturi facere autem. Assumenda, accusamus! Voluptates, quod tempore? Harum reiciendis alias dolorem aut, quae a esse aperiam ad, ullam similique ducimus possimus sed omnis quam sunt error. Voluptate quia, impedit sit assumenda sunt mollitia et recusandae facilis iusto blanditiis vero!
+          </p>
+        );
+      },
+    },
+    {
+        description: "Gjerry The Tenth",
+        title: "CTO",
+        src: "/members/gjerry.JPG",
+        ctaText: "Visit",
+        ctaLink: "#",
+        content: () => {
+          return (
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus excepturi facere autem. Assumenda, accusamus! Voluptates, quod tempore? Harum reiciendis alias dolorem aut, quae a esse aperiam ad, ullam similique ducimus possimus sed omnis quam sunt error. Voluptate quia, impedit sit assumenda sunt mollitia et recusandae facilis iusto blanditiis vero!
+            </p>
+          );
+        },
+      },
+      {
+        description: "Gjerry The Tenth",
+        title: "CTO",
+        src: "/members/gjerry.JPG",
+        ctaText: "Visit",
+        ctaLink: "#",
+        content: () => {
+          return (
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus excepturi facere autem. Assumenda, accusamus! Voluptates, quod tempore? Harum reiciendis alias dolorem aut, quae a esse aperiam ad, ullam similique ducimus possimus sed omnis quam sunt error. Voluptate quia, impedit sit assumenda sunt mollitia et recusandae facilis iusto blanditiis vero!
+            </p>
+          );
+        },
+      },
+      {
+        description: "Gjerry The Tenth",
+        title: "CTO",
+        src: "/members/gjerry.JPG",
+        ctaText: "Visit",
+        ctaLink: "#",
+        content: () => {
+          return (
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus excepturi facere autem. Assumenda, accusamus! Voluptates, quod tempore? Harum reiciendis alias dolorem aut, quae a esse aperiam ad, ullam similique ducimus possimus sed omnis quam sunt error. Voluptate quia, impedit sit assumenda sunt mollitia et recusandae facilis iusto blanditiis vero!
+            </p>
+          );
+        },
+      },
+  ];
