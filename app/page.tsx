@@ -2,6 +2,7 @@ import { Happenings } from "@/components/Happenings";
 import { Header } from "@/components/Header";
 import { Members } from "@/components/Members";
 import { SectionHeader } from "@/components/SectionHeader";
+import { Semester } from "@/components/Semester";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <SectionHeader title="Medlemmer" />
         <Members />
 
+        <Semester />
       </div>
     </main>
       
