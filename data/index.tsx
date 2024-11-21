@@ -6,7 +6,7 @@ export const happeningItems = [
         date: "26.11.2024",
         time: "10:00",
         description: "Buldring i Oslo Klatrepark",
-        link: "#", 
+        link: "https://peoply.app/events/NAQXEAYT", 
         id: 1,
     },
     {

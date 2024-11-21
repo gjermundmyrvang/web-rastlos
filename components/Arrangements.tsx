@@ -9,7 +9,7 @@ export const Arrangements = () => {
     <div className="w-full grid grid-cols-1
      lg:grid-cols-3 gap-5">
         {arrangements.map((arr) => (
-            <Link href={arr.link} key={arr.id}>
+            <Link href={arr.link} key={arr.id} target="_blank" rel="noopener noreferrer">
                 <Arrangement arr={arr}  />
             </Link>
         ))}
