@@ -32,7 +32,7 @@ export function Members() {
     useOutsideClick(ref, () => setActive(null));
    
     return (
-      <>
+      <div id="members">
         <AnimatePresence>
           {active && typeof active === "object" && (
             <motion.div
@@ -153,7 +153,7 @@ export function Members() {
             </motion.div>
           ))}
         </ul>
-      </>
+      </div>
     );
   }
    

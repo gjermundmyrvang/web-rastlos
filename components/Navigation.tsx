@@ -2,52 +2,21 @@ import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandBlogger,
   IconBrandInstagram,
+  IconCalendar,
+  IconCalendarEvent,
   IconHome,
-  IconMail
+  IconMail,
+  IconUser
 } from "@tabler/icons-react";
 
 export function TopNav() {
   const links = [
     {
-      title: "Instagram",
-      icon: (
-        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "https://instagram.com/ifirastlos",
-    },
-    {
-        title: "Blog",
-        icon: (
-            <IconBrandBlogger className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-        href: "#",
-    },
-    {
-        title: "Kontakt",
-        icon: (
-            <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-        href: "#",
-    },
-   
-  ];
-  return (
-    <div className="flex items-center justify-center w-full">
-      <FloatingDock
-        items={links}
-      />
-    </div>
-  );
-}
-
-export function BottomNav() {
-  const links = [
-    {
-      title: "Top",
+      title: "Hjem",
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#"
     },
     {
       title: "Instagram",
@@ -55,25 +24,47 @@ export function BottomNav() {
         <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "https://instagram.com/ifirastlos",
+      newPage: true
     },
+    {
+      title: "Arrangementer",
+      icon: (
+          <IconCalendar className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#arrangements",
+  },
+    {
+      title: "Styret",
+      icon: (
+          <IconUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#members",
+  },
+  {
+    title: "Semester",
+    icon: (
+        <IconCalendarEvent className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#semester",
+},
     {
         title: "Blog",
         icon: (
             <IconBrandBlogger className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-        href: "#",
+        href: "#blog",
     },
     {
         title: "Kontakt",
         icon: (
             <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-        href: "#",
+        href: "#contact",
     },
    
   ];
   return (
-    <div className="flex items-center justify-center w-full mb-20">
+    <div className="flex items-center justify-center w-full my-10">
       <FloatingDock
         items={links}
       />

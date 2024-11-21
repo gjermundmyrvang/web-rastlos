@@ -2,12 +2,12 @@
 import { cn } from "@/lib/utils";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
-    AnimatePresence,
-    MotionValue,
-    motion,
-    useMotionValue,
-    useSpring,
-    useTransform,
+  AnimatePresence,
+  MotionValue,
+  motion,
+  useMotionValue,
+  useSpring,
+  useTransform,
 } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -17,7 +17,7 @@ export const FloatingDock = ({
   desktopClassName,
   mobileClassName,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; newPage?:boolean; }[];
   desktopClassName?: string;
   mobileClassName?: string;
 }) => {
@@ -33,7 +33,7 @@ const FloatingDockMobile = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; newPage?:boolean; }[];
   className?: string;
 }) => {
   const [open, setOpen] = useState(false);
@@ -62,15 +62,25 @@ const FloatingDockMobile = ({
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
-                <Link
-                  href={item.href}
-                  key={item.title}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
-                >
-                  <div className="h-4 w-4">{item.icon}</div>
-                </Link>
+                {item.newPage? 
+                  <Link
+                    href={item.href}
+                    key={item.title}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
+                  >
+                    <div className="h-4 w-4">{item.icon}</div>
+                  </Link>
+                  :
+                  <Link
+                    href={item.href}
+                    key={item.title}
+                    className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
+                  >
+                    <div className="h-4 w-4">{item.icon}</div>
+                  </Link>
+              }
               </motion.div>
             ))}
           </motion.div>
@@ -90,7 +100,7 @@ const FloatingDockDesktop = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; newPage?:boolean; }[];
   className?: string;
 }) => {
   let mouseX = useMotionValue(Infinity);
@@ -115,11 +125,13 @@ function IconContainer({
   title,
   icon,
   href,
+  newPage,
 }: {
   mouseX: MotionValue;
   title: string;
   icon: React.ReactNode;
   href: string;
+  newPage?: boolean;
 }) {
   let ref = useRef<HTMLDivElement>(null);
 
@@ -164,8 +176,10 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link href={href} target="_blank" 
-    rel="noopener noreferrer">
+    <Link href={href}
+      {...(newPage
+      ? { target: "_blank", rel: "noopener noreferrer" }
+      : {})}>
       <motion.div
         ref={ref}
         style={{ width, height }}

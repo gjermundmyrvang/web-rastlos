@@ -19,7 +19,7 @@ const blog = blogPosts
 
 export const Blog = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full" id="blog">
         {blog.map((post) => (
             <div className="mb-5 border-b-2" key={post.id}>
                 <Post post={post} />
