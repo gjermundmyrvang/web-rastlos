@@ -1,45 +1,28 @@
 import Image from "next/image";
-const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nam vero ullam recusandae illum delectus voluptatum consectetur ratione architecto amet.</p>
-    </div>
-  );
 
 export const happeningItems = [
     {
-        title: "Tur til Gaustadtoppen", 
-        header: <Skeleton />,
-        description: "blabla", 
+        title: "Buldring", 
+        date: "26.11.2024",
+        time: "10:00",
+        description: "Buldring i Oslo Klatrepark",
+        link: "#", 
         id: 1,
-        className: "md:col-span-2",
     },
     {
-        title: "Tur til Gaustadtoppen", 
-        header: <Skeleton />,
-        description: "blabla", 
+        title: "Pepperkakehus", 
+        date: "5.12.2024",
+        time: "16:00",
+        description: "Pepperkakebaking i kantinen på IFI!", 
+        link: "#", 
         id: 2,
-        className: "md:col-span-1",
     },
-    {
-        title: "Tur til Gaustadtoppen",
-        header: <Skeleton />, 
-        description: "blabla", 
-        id: 3,
-        className: "md:col-span-1",
-    },
-    {
-        title: "Tur til Gaustadtoppen", 
-        header: <Skeleton />,
-        description: "blabla", 
-        id: 4,
-        className: "md:col-span-2",
-    }, 
   ]
 
   export const members = [
     {
-      description: "Gjerry The Tenth",
-      title: "CTO",
+      description: "Mina Williams",
+      title: "Leder",
       src: "/members/gjerry.JPG",
       ctaText: "Visit",
       ctaLink: "#",
@@ -52,8 +35,8 @@ export const happeningItems = [
       },
     },
     {
-        description: "Ola The Dread",
-        title: "Nestkommanderende",
+        description: "Ola Nordrum",
+        title: "Nestleder",
         src: "/members/gjerry.JPG",
         ctaText: "Visit",
         ctaLink: "#",
@@ -66,8 +49,8 @@ export const happeningItems = [
         },
       },
       {
-        description: "Mina The Beast",
-        title: "BOSS",
+        description: "Krisitine",
+        title: "Arrengmentansvarlig",
         src: "/members/gjerry.JPG",
         ctaText: "Visit",
         ctaLink: "#",
@@ -80,8 +63,8 @@ export const happeningItems = [
         },
       },
       {
-        description: "Herman The G",
-        title: "Arrangementkoordinator",
+        description: "",
+        title: "Økonomiansvarlig",
         src: "/members/gjerry.JPG",
         ctaText: "Visit",
         ctaLink: "#",
@@ -95,47 +78,61 @@ export const happeningItems = [
       },
   ];
 
-  export const semesterPlan = [
+  export const blogPosts = [
     {
-      title: "Oktober 2024",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-white-100 text-xs md:text-lg font-normal mb-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quaerat quasi doloremque id modi sed autem labore amet rerum eos!
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="/dummyPictures/dummy-image-square.jpg"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/dummyPictures/dummy-image-square.jpg"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/dummyPictures/dummy-image-square.jpg"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/dummyPictures/dummy-image-square.jpg"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
-        </div>
-      ),
+      title: "Hyttetur",
+      date: "20.10.2024",
+      images: [
+        {
+          url: "/dummyPictures/dummy-image-square.jpg",
+          id: 1
+        },
+        {
+          url: "/dummyPictures/dummy-image-square.jpg",
+          id: 2
+        },
+        {
+          url: "/dummyPictures/dummy-image-square.jpg",
+          id: 3
+        },
+      ],
+      content: "Bla bla bla",
+      id: 1
     },
+    {
+      title: "Keramikk kurs",
+      date: "12.11.2024",
+      images: [
+        {
+          url: "/dummyPictures/dummy-image-square.jpg",
+          id: 1
+        },
+        {
+          url: "/members/gjerry.JPG",
+          id: 2
+        },
+        {
+          url: "/dummyPictures/dummy-image-square.jpg",
+          id: 3
+        },
+        {
+          url: "/dummyPictures/dummy-image-square.jpg",
+          id: 4
+        },
+        {
+          url: "/dummyPictures/dummy-image-square.jpg",
+          id: 5
+        },
+        {
+          url: "/dummyPictures/dummy-image-square.jpg",
+          id: 6
+        },
+      ],
+      content: "Bla bla bla",
+      id: 2
+    },
+  ]
+  export const semesterPlan = [
     {
       title: "November 2024",
       content: (
