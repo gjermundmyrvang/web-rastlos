@@ -84,15 +84,15 @@ export const happeningItems = [
       date: "20.10.2024",
       images: [
         {
-          url: "/dummyPictures/dummy-image-square.jpg",
+          url: "/hyttetur/1.jpg",
           id: 1
         },
         {
-          url: "/dummyPictures/dummy-image-square.jpg",
+          url: "/hyttetur/2.jpg",
           id: 2
         },
         {
-          url: "/dummyPictures/dummy-image-square.jpg",
+          url: "/hyttetur/3.jpg",
           id: 3
         },
       ],
@@ -104,28 +104,8 @@ export const happeningItems = [
       date: "12.11.2024",
       images: [
         {
-          url: "/dummyPictures/dummy-image-square.jpg",
+          url: "/keramikk/1.jpg",
           id: 1
-        },
-        {
-          url: "/members/gjerry.JPG",
-          id: 2
-        },
-        {
-          url: "/dummyPictures/dummy-image-square.jpg",
-          id: 3
-        },
-        {
-          url: "/dummyPictures/dummy-image-square.jpg",
-          id: 4
-        },
-        {
-          url: "/dummyPictures/dummy-image-square.jpg",
-          id: 5
-        },
-        {
-          url: "/dummyPictures/dummy-image-square.jpg",
-          id: 6
         },
       ],
       content: "Bla bla bla",
