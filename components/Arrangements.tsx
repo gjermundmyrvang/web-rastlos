@@ -28,7 +28,7 @@ type ArrangementType = {
 const Arrangement = ({arr, style}:{arr: ArrangementType, style?: string}) => {
     return (
         <BackgroundGradient className="hover:cursor-pointer">
-            <div className="flex flex-col flex-wrap p-5 min-h-[20vh]" id="arrangements">
+            <div className="flex flex-col flex-wrap p-5 min-h-[20vh] bg-black rounded-3xl" id="arrangements">
                 <h1 className="font-bold text-lg lg:text-3xl">{arr.title}</h1>
                 <span className="flex space-x-2 mt-2">
                 <p className="font-bold text-lg lg:text-xl">Dato:</p>
