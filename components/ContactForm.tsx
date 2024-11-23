@@ -12,7 +12,7 @@ export const ContactForm = () => {
   const { register, handleSubmit } = useForm<FormData>();
 
   function onSubmit(data: FormData) {
-    console.log("mail sent")
+    console.log("Mail sent", data)
   }
 
   return (

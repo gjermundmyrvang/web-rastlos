@@ -118,7 +118,7 @@ export function Members() {
           ) : null}
         </AnimatePresence>
         <ul className="mx-auto my-10 w-full flex flex-wrap items-start gap-5">
-          {members.map((card, index) => (
+          {members.map((card) => (
             <motion.div
               layoutId={`card-${card.title}-${id}`}
               key={card.title}

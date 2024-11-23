@@ -25,7 +25,7 @@ type ArrangementType = {
     id: number;
 }
 
-const Arrangement = ({arr, style}:{arr: ArrangementType, style?: string}) => {
+const Arrangement = ({arr}:{arr: ArrangementType}) => {
     return (
         <BackgroundGradient className="hover:cursor-pointer">
             <div className="flex flex-col flex-wrap p-5 min-h-[20vh] bg-black-100 rounded-3xl" id="arrangements">
