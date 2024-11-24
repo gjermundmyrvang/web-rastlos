@@ -15,7 +15,7 @@ export const Header = () => {
                 <h1 className="uppercase tracking-widest text-xs sm:text-lg md:text-xl text-center text-blue-100 max-w-80">
                     Den beste foreningen på IFI noensinne!
                 </h1>
-                <Image src={"/assets/mainlogoW.png"} width={500} height={500} layout="responsive" alt="logo av ifirastløs"/>
+                <Image src={"/assets/mainlogoW.png"} width={400} height={400} layout="responsive" alt="logo av ifirastløs"/>
             </div>
         </div>
     </div>
